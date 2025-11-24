@@ -1,6 +1,7 @@
 📘 Logic Processor — Tradução entre Português e Lógica Proposicional (CPC)
 
 🎥 Link do vídeo demonstrando o uso do Agente de IA: https://www.youtube.com/watch?v=2OQvOgXMn2M
+📘 Link para testes do tradutor: https://cpctranslator.streamlit.app/
 
 Este repositório contém um módulo em Python que implementa dois modos principais de conversão entre linguagem natural em português e fórmulas de Lógica Proposicional Clássica (CPC).
 A aplicação usa SymPy, Streamlit e o modelo Gemini (Google Generative AI) para conduzir traduções precisas e estruturadas.
