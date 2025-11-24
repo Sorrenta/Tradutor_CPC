@@ -12,35 +12,8 @@ Tradução semântica com LLMs (via Gemini – Google Generative AI)
 Interface reativa e cacheamento (via Streamlit)
 Módulo unificado de orquestração (logic_processor.py)
 
-🔷 Visão geral da arquitetura
-+---------------------------------------------------------------+
-|                         Interface (UI)                       |
-|                         (Streamlit)                          |
-+------------------------------+--------------------------------+
-                               |
-                               v
-+---------------------------------------------------------------+
-|                       Camada de Aplicação                    |
-|                      (logic_processor.py)                    |
-+---------------------------------------------------------------+
-|   Modo 1                         |     Modo 2               |
-|  NL → CPC                        |   CPC → NL               |
-|   translate_nl_to_cpc            |   translate_cpc_to_nl_AI |
-|----------------------------------+----------------------------|
-| - Prepara prompt                 | - Prepara prompt          |
-| - Chama Gemini                   | - Chama Gemini            |
-| - Retorna JSON estruturado       | - Retorna JSON estruturado|
-+---------------------------------------------------------------+
-                               |
-                               v
-+---------------------------------------------------------------+
-|               Camada de Manipulação Lógica (local)           |
-|                       (SymPy, Regex)                         |
-+---------------------------------------------------------------+
-| - Parsing de fórmulas                                         |
-| - Substituição de conectivos ASCII/Unicode                    |
-| - Extração de proposições                                     |
-+---------------------------------------------------------------+
+<img width="440" height="583" alt="image" src="https://github.com/user-attachments/assets/20be2805-b051-464e-b73a-2aeeb760b67a" />
+
 
 🔷 Funcionamento resumido
 Modo 1 — Português → Lógica (NL → CPC)
